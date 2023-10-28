@@ -1,0 +1,54 @@
+<!--
+EECS 348 Lab 7
+Profile page styled with CSS
+practice1.html
+Ky Jost 
+26 October 2023 
+-->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Ky's Profile Page</title>
+    </head>
+    <body> 
+        <h1>Ky Jost</h1>
+        <img src="kyJost.jpg" alt="Ky Jost" style="width:500px"> 
+        <p>Email: kejost@ku.edu</p>
+        <p>Phone: (314) 853-5310</p>
+        <P>I am part of NROTC. I am interested in becoming a Naval Nuclear Officer: </P>
+        <video width="1000" controls> 
+            <source src="Nuclear Officer.mp4" type="video/mp4"> 
+            Your browser doesn't support this epic video. 
+        </video>
+        <p>I am also interested in doing cyber work for the navy. <a href="https://www.navy.com/careers/cyber-warfare-engineer" target="_blank">Click here</a> to find out more!</p>
+    </body>
+    <style>
+        body {
+            background-image: url("background.jpg"); 
+            background-color: rgba(255,255,255,0.3);
+            background-blend-mode: lighten;  
+        }
+
+        img {
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+
+        h1 {
+            text-align: center; 
+            font-family: Georgia; 
+        }
+
+        p {
+            text-align: center; 
+            font-family: "Courier New"; 
+        }
+
+        video {
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+    </style>
+</html>

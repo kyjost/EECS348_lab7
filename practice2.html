@@ -1,0 +1,43 @@
+<!--
+EECS 348 Lab 7
+Webpage with fun font stuff going on. 
+practice2.html
+Ky Jost 
+26 October 2023 
+-->
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>JavaScript Password Verification</title>
+    </head>
+
+    <body>
+        <p id="dummy">This is our dummy text! Change the color!</p>
+        <form>
+            <label for="red">Enter the red value: </label>
+            <input type="text" id="red"> 
+
+            <label for="green">Enter the green value: </label>
+            <input type="text" id="green"> 
+
+            <label for="blue">Enter the blue value: </label>
+            <input type="text" id="blue"> 
+        </form>
+
+        <button onclick="verify()">Verify</button>
+    </body>
+
+    <script>
+        function verify() {
+            var red = document.getElementById("red").value; 
+            var green = document.getElementById("green").value; 
+            var blue = document.getElementById("blue").value; 
+
+            var redI = parseInt(red); 
+            var greenI = parseInt(green); 
+            var blueI = parseInt(blue); 
+
+            document.getElementById("dummy").style.color = "rgb(" + redI + ", " + greenI + ", " + blueI + ")"; 
+        }
+    </script>
+</html>
